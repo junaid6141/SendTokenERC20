@@ -2,7 +2,7 @@
   "name": "AirDropERC20",
   "version": "1.0.0",
   "description": "Ethereum API's for Airdrop tokens",
-  "main": "app.js",
+  "start": "app.js",
   "dependencies": {
     "body-parser": "^1.18.2",
     "ethereum-address": "0.0.4",
