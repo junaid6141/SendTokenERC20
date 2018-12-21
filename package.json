@@ -1,8 +1,8 @@
 {
-  "name": "abcdef",
+  "name": "AirDropERC20",
   "version": "1.0.0",
-  "description": "",
-  "main": "ap.js",
+  "description": "Ethereum API's for Airdrop tokens",
+  "main": "app.js",
   "dependencies": {
     "body-parser": "^1.18.2",
     "ethereum-address": "0.0.4",
@@ -21,7 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/Govind13100/abcdef.git"
   },
-  "author": "GJ",
+  "author": "Junaid Mushtaq",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Govind13100/abcdef/issues"
