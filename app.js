@@ -23,10 +23,10 @@ const web3 = new Web3();
 const Tx = require("ethereumjs-tx");
 var Web3EthAccounts = require('web3-eth-accounts');
 
-web3.setProvider(new web3.providers.HttpProvider("https://mainnet.infura.io/t2utzUdkSyp5DgSxasQX"));
+web3.setProvider(new web3.providers.HttpProvider("https://mainnet.infura.io/'Your Infura token'"));
 
-var abi = [{"constant":true,"inputs":[],"name":"isActive","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"tokensAvailable","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"destroy","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"dests","type":"address[]"},{"name":"values","type":"uint256[]"}],"name":"sendTokens","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"name":"to","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"TransferredToken","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"to","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"FailedTransfer","type":"event"}];
-var contractAddress = "0xB9B971f5C1434D8D28e07a309a2ed421230BF21A"; 
+var abi = "Token ABI";
+var contractAddress = ""; 
 var contract =  web3.eth.contract(abi).at(contractAddress);
 
 var sendToken = express.Router();
